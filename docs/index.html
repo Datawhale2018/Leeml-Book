@@ -29,8 +29,8 @@
   
   // 评论插件的应用
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <script>
     const gitalk = new Gitalk({
       clientID: '02724a2355f93ed58315',
@@ -38,9 +38,11 @@
       repo: 'Leeml-Book',
       owner: 'datawhalechina',
       admin: ['datawhalechina','Spareribs'],
+      id: md5(location.pathname),
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
+    gitalk.render('gitalk-container')
   </script>
 </body>
 </html>
