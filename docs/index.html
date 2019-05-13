@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="/js/src/md5.min.js"></script>
   <script>
     const gitalk = new Gitalk({
       clientID: '02724a2355f93ed58315',
@@ -38,7 +39,7 @@
       repo: 'Leeml-Book',
       owner: 'datawhalechina',
       admin: ['datawhalechina','Spareribs'],
-      id: location.pathname, // Ensure uniqueness and length less than 50
+      id: md5(location.pathname), // Ensure uniqueness and length less than 50
       distractionFreeMode: false // facebook-like distraction free mode
     })
     gitalk.render('gitalk-container')
