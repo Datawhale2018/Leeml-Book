@@ -8,4 +8,4 @@
   - [P7 Gradient Descent (Demo by Minecraft)](chapter7/chapter7.md)
   - [P8 Classification](chapter8/chapter8.md)
   - [P9 Logistic Regression](chapter9/chapter9.md)
-  - [P10 Additional References](AdditionalReferences/entropy.md)
+  - [P10 Additional References](AdditionalReferences/Entropy.md)
