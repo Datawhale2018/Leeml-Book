@@ -100,7 +100,7 @@ p(1)+p(2)+...+p(n)=1
 $$
 - 构建拉格朗日函数
 $$
-L(p(1),p(2),...p(n),\lambda)=-p(1)logp(1)-...-p(n)logp(n)+\lambda(p(1)+...p(n))
+L(p(1),p(2),...p(n),\lambda)=-p(1)logp(1)-...-p(n)logp(n)+\lambda(p(1)+...p(n)-1)
 $$
 - - 令偏导等于0
 
@@ -184,11 +184,11 @@ $$
 $$
 H(X,Y)-H(X)
 
-= -\sum_{x,y}log(x,y)+\sum_xP(x)logP(x)\\
+= -\sum_{x,y}P(x,y)log(x,y)+\sum_xP(x)logP(x)\\
 
-=-\sum_{x,y}log(x,y)+\sum_x(\sum_yP(x,y))logP(x)\\
+=-\sum_{x,y}P(x,y)log(x,y)+\sum_x(\sum_yP(x,y))logP(x)\\
 
-=-\sum_{x,y}log(x,y)+\sum_{x,y}P(x,y)logP(x)\\
+=-\sum_{x,y}P(x,y)log(x,y)+\sum_{x,y}P(x,y)logP(x)\\
 
 =-\sum_{x,y}P(x,y)log\frac{P(x,y)}{P(x)}\\
 
